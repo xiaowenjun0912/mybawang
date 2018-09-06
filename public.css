@@ -1,0 +1,752 @@
+.find_nav_list > ul.navbar
+/* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
+.tooltipster-default { border-radius: 5px; border: 2px solid #000; background: #4c4c4c; color: #fff; }
+
+/* Use this next selector to style things like font-size and line-height: */
+.tooltipster-default .tooltipster-content { font-family: Arial, sans-serif; font-size: 12px; line-height: 16px; padding: 8px 10px; overflow: hidden; }
+
+/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border { /* border-color: ... !important; */ }
+
+/* If you're using the icon option, use this next selector to style them */
+.tooltipster-icon { cursor: help; margin-left: 4px; }
+
+/* This is the base styling required to make all Tooltipsters work */
+.tooltipster-base { padding: 0; font-size: 0; line-height: 0; position: absolute; left: 0; top: 0; z-index: 999999; pointer-events: none; width: auto; overflow: visible; }
+.tooltipster-base .tooltipster-content { overflow: hidden; }
+
+.tooltipster-fade { opacity: 0; -webkit-transition-property: opacity; -moz-transition-property: opacity; -o-transition-property: opacity; -ms-transition-property: opacity; transition-property: opacity; }
+.tooltipster-fade-show { opacity: 1; }
+/**全局样式***/
+.logo { margin: 0px; padding: 0px; }
+.disnone { display: none !important; }
+/***header***/
+.box { width: 100%; height: 100%; position: relative; }
+.header { z-index: 100000; position: absolute; left: 0; top: 0; height: 70px; width: 100%; background: none; transition: all .5s ease-out; }
+.menu_bt { position: relative; z-index: 9999; width: 24px; height: 12px; border-top: 2px solid #666; border-bottom: 2px solid #666; vertical-align: middle; float: right; display: none; }
+.header .con { width: 1200px; margin: 0 auto; cursor: pointer; }
+.sfa{color: #333 !important;}
+.header .con .logo { float: left; position: relative; z-index: 10; }
+.header .con .logo a { display: block; float: left; width: 190px; height: 40px; margin-top: 16px; background: url("logo-1.png")/*tpa=http://www.fasene.com//css/images/logo.png*/ no-repeat; background-size: auto 40px; }
+.header .con .logo .hotline { float: left; padding: 0 20px; margin-top: 16px; border-left: 2px solid #5CC2D0; color: #5CC2D0; }
+.header .con .logo .hotline div { font-size: 16px; }
+.header .con .logo .hotline p { font-size: 14px; }
+
+.header_place { float: left; clear: both; width: 100%; height: 70px; }
+
+.find_nav { float: right; z-index: 99; /*height: 70px; line-height: 70px;*/ display: -moz-box; display: -webkit-box; display: box; opacity: 1; }
+.find_nav_left { margin: 0 auto; height: 70px; position: relative; -moz-box-flex: 1; -webkit-box-flex: 1; box-flex: 1; font-size: 14px; }
+.find_nav_list .navbar a{color: #333 !important;}
+.find_nav_list > ul.navbar { width: 100%; height: 70px; position: relative; white-space: nowrap; margin-bottom: 0; font-size: 0; padding-left: 0; box-sizing: border-box; box-sizing: inherit; }
+.find_nav_list > ul.navbar > li ,.find_nav_list > ul.navbar > li > ol > li { float: left; height: 70px; position: relative; display: block; margin: 0 20px; list-style: none; box-sizing: inherit; text-align: center; }
+.find_nav_list > ul.navbar > li > a ,.find_nav_list > ul.navbar > li > ol > li{ display: block; font-size: 16px; display: block; padding: 0 10px; color: #fff; height: 68px; line-height: 68px; text-decoration: none; -webkit-tap-highlight-color: rgba(0,0,0,0); outline: none; }
+.find_nav_list > ul.navbar > li > a:hover,.find_nav_list > ul.navbar > li > ol > li > a:hover { color: #e4007f; font-weight: 200; } /****/
+.find_nav_list > ul.navbar > li > i,.find_nav_list > ul.navbar > li > ol > li > i { position: absolute; top: 64px; left: 0; right: 0; margin: auto; width: 0%; height: 4px; display: block; background-color: #41acfe; overflow: hidden; transition: all .25s ease-in-out; }
+.find_nav_list > ul.navbar > li.nav_active > a ,.find_nav_list > ul.navbar > li.nav_active > ol > li > a { color: #e4007f; }
+.find_nav_list > ul.navbar > li.nav_active > i ,.find_nav_list > ul.navbar > li.nav_active > ol > li > i { width: 100%; }
+.find_nav_list > ul.navbar > li:hover > a ,.find_nav_list > ul.navbar > li > ol > li:hover > a{ color: #e4007f; font-weight: 200; }
+.find_nav_list > ul.navbar > li:hover > i ,.find_nav_list > ul.navbar > li > ol > li:hover > i{ width: 100%; }
+.find_nav_list > ul.navbar:hover > li.nav_active i,.find_nav_list > ul.navbar:hover > li.nav_active > ol > li > i { width: 0%; }
+.find_nav_list > ul.navbar > li.nav_active:hover i,.find_nav_list > ul.navbar > li.nav_active:hover > ol > li > i { width: 100%; }
+
+.find_nav_list > ul.navbar > li > ol{width:100%;height: auto;background-color: #ffffffd9;padding-left: 0;display: none}
+.find_nav_list > ul.navbar > li > ol > li{float: none}
+
+.find_nav_list > ul.navbar > li:hover > ol{display: block}
+.yasd{color: #777777d6;}
+#danq > i{width: 100%;color: #e4007f; font-weight: 200;}
+.header.add { position: fixed; top: 0; background: #fff; box-shadow: 0 0 5px 2px rgba(0,0,0,.1); transition: all .5s ease-out;border-bottom: 1px solid #ddd }
+.header.add .logo a { background: url("headlogo.png")/*tpa=http://www.fasene.com//css/images/headlogo.png*/ no-repeat; width: 250px; height: 40px; display: block; background-size: auto 40px; }
+.header.add .find_nav_list > ul > li > a { color: #666; }
+.header.add .find_nav_list > ul > li.nav_active > a { color: #e4007f; font-weight: 200; }
+/*.header.add .find_nav_list > ul > li.border_active > a {border-bottom: 4px solid #5cc2d0; }*/
+/*.header.add  .find_nav_list > ul > li > a:hover{ color: #5CC2D0; }*/
+.header.out { top: -70px; }
+
+.header .nav-drop { display: none; width: 100%; margin-top: 70px; background-color: #f5f5f5; }
+.header .nav-drop > ul { width: 1200px; margin: 0 auto; padding: 20px 0; }
+.header .nav-drop > ul > li { display: inline-block; width: 33.1%; padding: 10px 25px; vertical-align: top; text-align: center; border-right: 1px solid #e6e6e6; }
+.header .nav-drop > ul > li:last-child { border: 0; }
+.header .nav-drop > ul > li > a { font-size: 14px; color: #333; text-align: center; }
+.header .nav-drop .nav-drop-list { padding: 25px 0 0 20px; text-align: left; }
+.header .nav-drop .nav-drop-list li { display: inline-block; min-width: 140px; padding: 10px 0px; margin-left: 20px; }
+.header .nav-drop .nav-drop-list li a { font-size: 12px; color: #808080; }
+
+.find_nav_left.day_w { width: 100%; }
+.sideline { display: block; position: absolute; border: 0; height: 4px; background-color: #e4007f; left: 0; top: 60px; pointer-events: none; }
+
+.xq_move { transition: all .3s ease-in-out; position: absolute; }
+
+.menu_bt { position: relative; z-index: 9999; width: 24px; height: 12px; border-top: 2px solid #666; border-bottom: 2px solid #666; vertical-align: middle; float: right; display: none; }
+.menu_bt:after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; border-bottom: 2px solid #666; transition: all 100ms linear 0ms; }
+.menu_bt span:after { border-color: #666; }
+.menu_bt span { font-size: 0; text-indent: -9999px; }
+.menu_bt span:before, .menu_bt span:after { content: ''; position: absolute; top: 50%; right: 0; left: 0; border-top: 1px solid black; transition: all 100ms linear 0ms; }
+.menu_bt.open { color: transparent !important; border: 0; }
+.menu_bt.open:after { -webkit-transform: scale(0); transform: scale(0); }
+.menu_bt.open span:before, .menu_bt.open span:after { border-width: 2px; border-color: #666; }
+.menu_bt.open span:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.menu_bt.open span:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+/**======内容=======***/
+.content { width: 100%; }
+/*标题样式*/
+.title-content { position: relative; display: table; height: 100%; margin: 0 auto; text-align: center; top: 25px;
+    z-index: 999;}
+.title-content a {  float: left; cursor: pointer; line-height: 70px; padding: 0 25px; font-size: 28px; color: #45aefd; text-align: center; }
+.title-content a h2 { display: inline-block; cursor: pointer;; margin: 0 auto; }
+.title-content .title-img { float: left; display: inline-block; width: 159px; height: 70px; line-height: 70px; }
+.title-content .title-img i.title-line { display: inline-block; width: 150px; height: 1px; margin: 0 -5px 5px 0; background: #999; }
+.title-content .title-img i.title-block { display: inline-block; width: 10px; height: 10px; background-color: #999; border-radius: 50%; }
+.title-content .title-img i.title-line2 { display: inline-block; width: 150px; height: 1px; margin: 0 0 5px -5px; background: #999; }
+
+/**伦播**/
+.ucr-banner { float: left; margin: 0px; padding: 0px; width: 100%; height: 500px; position: relative; overflow: hidden; }
+.ucr-banner .swiper-container { width: 100%; height: 500px; }
+.swiper-pagination { position: absolute; bottom: 100px !important; }
+.ucr-banner .swiper-slide { text-align: center; font-size: 18px; background: #fff; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; /* -webkit-align-items: center; align-items: center; */ }
+.ucr-banner .swiper-pagination-bullet { position: relative; opacity: 1; background: #ddd; width: 60px; height: 3px; border-radius: 2px; margin: 0px; padding: 0px; }
+.ucr-banner .swiper-pagination-bullet p { position: absolute; z-index: 0; background: #50a8b4; left: 0px; top: 0px; margin: 0px; padding: 0px; display: inline-block; width: 0px; height: 3px; border-radius: 2px; transition: all 5s; }
+.ucr-banner .swiper-pagination-bullet p.on { width: 100%; }
+.ucr-banner .swiper-pagination-bullet p.distran { transition: all 0s; }
+.ucr-banner .swiper-pagination-bullet-active { opacity: 1; background: #ddd; }
+.ucr-banner .swiper-slide.slide1 { background: url("banner1_bg.jpg")/*tpa=http://www.fasene.com//css/images/banner1_bg.jpg*/ no-repeat center center; background-size: auto 100%; }
+.ucr-banner .swiper-slide.slide1 img { width: 618px; }
+.ucr-banner .swiper-slide.slide1 > .title { text-align: center; margin-top: 70px; font-size: 30px; font-weight: 200; color: #fff; }
+.ucr-banner .swiper-slide.slide1 > .title p { font-size: 46px; margin-top: 50px; font-weight: 100; letter-spacing: 5px; }
+.ucr-banner .swiper-slide.slide2 { background: url("banner2_bg.jpg")/*tpa=http://www.fasene.com//css/images/banner2_bg.jpg*/ no-repeat center center; background-size: auto 100%; }
+.ucr-banner .swiper-slide.slide2 .title { text-align: center; margin-top: 150px; }
+.ucr-banner .swiper-slide.slide2 .title div { font-size: 46px; font-weight: 100; letter-spacing: 4px; color: #fff; text-align: center; }
+.ucr-banner .swiper-slide.slide2 .title span { font-size: 18px; margin: 20px 28px; display: inline-block; color: #fff; text-align: center; }
+.ucr-banner .swiper-slide.slide2 h2 { bottom: 100px; text-align: center; font-size: 30px; font-weight: 200; position: absolute; width: 100%; }
+.ucr-banner .swiper-slide.slide3 img { width: 900px; margin: 50px 0 0px; }
+/*.ucr-banner .swiper-slide.slide3 .banner_con { float: left; width: 340px; margin: 120px 0 0 60px; }
+.ucr-banner .swiper-slide.slide3 .banner_con h2 { font-size: 46px; color: #fff; letter-spacing: 22px;}
+.ucr-banner .swiper-slide.slide3 .banner_con span { display: inline-block; padding-bottom: 15px; font-size: 18px; color: #fff; letter-spacing: 8px; border-bottom: 1px solid #a1dfea;}
+.ucr-banner .swiper-slide.slide3 .banner_con li { float: left; width: 60px; height: 60px;margin: 15px 4px;border-radius: 50%; background-color: #a8e1ea;}
+.ucr-banner .swiper-slide.slide3 .banner_con li div { width: 50px; height: 50px; margin: 5px auto; padding: 5px;font-size: 14px;background-color: #f1f9fc; color: #437d93; border-radius: 50%;}*/
+.ucr-banner .swiper-slide.slide3 { background: url("banner1_bg.jpg")/*tpa=http://www.fasene.com//css/images/banner1_bg.jpg*/ no-repeat center center; background-size: auto 100%; }
+.ucr-banner .swiper-slide.slide3 .title { text-align: center; margin-top: 70px; font-size: 40px; font-weight: 200; }
+.ucr-banner .swiper-slide .title { margin-top: 70px; }
+
+
+/**底部**/
+#footer { float: left; clear: both; width: 100%; background-color: #282b32; padding-bottom: 20px; }
+.footer { float: left; width: 100%; overflow: hidden; }
+.footer_content { width: 1200px; margin: 65px auto 0; }
+.foot_top { height: 235px; border-bottom: 1px solid #3d414c; }
+.foot_top > div { float: left; }
+.foot_top .foot_left { display: inline-block; width: 260px; }
+.foot_top .foot_left .footerLogo img { width: 190px; }
+.foot_top .foot_left .footerLogo div { font-size: 18px; margin-top: 30px; color: #5cc2cf; }
+.foot_top .foot_right { position: relative; display: inline-block; margin-left: 100px; width: 840px; }
+.foot_top .foot_right ul li { margin-bottom: 23px; }
+.foot_top .foot_right > ul > li { float: left; margin: 0 36px; position: relative; }
+.foot_top .foot_right ul li a { font-size: 12px; color: #fff; }
+.foot_top .foot_right > ul > li > a { color: #fff; font-size: 18px; display: inline-block; margin-bottom: 23px; }
+.foot_top .foot_right > ul > li.pos_abs { position: absolute; right: 0; }
+.foot_top .foot_right > ul > li.pos_abs img { width: 130px; }
+.foot_top .foot_right .down_drop { display: none; cursor: pointer; width: 20px; height: 20px; position: absolute; top: 25px; right: 30px; background: url("drop.png")/*tpa=http://www.fasene.com//css/images/drop.png*/no-repeat center center; background-size: cover; }
+/*.drop_active {transform: rotate(180deg);}*/
+
+.foot_bottom li { display: inline-block; margin: 10px 0 0; }
+.foot_bottom li a { display: inline-block; padding: 0 5px; color: #62666e; font-size: 12px; }
+.foot_bottom li:last-child a { border-right: none; }
+.foot_bottom p { margin-top: 15px; color: #62666e; text-align: center; }
+
+/*合作伙伴end*/
+/**二维码微博分享置顶***/
+#jump { position: fixed; top: 40%; right: 10px; margin-top: 54px; z-index: 99999999; }
+#jump li { width: 44px; height: 64px; overflow: hidden;}
+#top, #qq, #tel, #weixin { display: block; width: 44px; height: 44px; overflow: hidden; cursor: pointer; background-size: 44px 44px; background-position: center center; transition: all 0.3s ease-in-out !important; }
+.nb-icon-wrap-4, .nb-icon-bridge-base, .nb-icon-icon { position: fixed; padding: 0 !important; top: 40% !important; right: 20px !important; margin: 0px !important; width: 44px !important; height: 44px !important; z-index: 400; overflow: hidden; background-position: center center !important; background-size: 44px 44px !important; transform: none !important; }
+.nb-icon-inner-wrap, .nb-icon-customer { width: 44px !important; height: 44px !important; background-size: 44px 44px !important; background-image: url("kf.png")/*tpa=http://www.fasene.com//css/Images/kf.png*/ !important; transition: all 0.3s ease-in-out !important; }
+.nb-icon-inner-wrap:hover, .nb-icon-customer:hover { background-image: url("kf_hover.png")/*tpa=http://www.fasene.com//css/Images/kf_hover.png*/ !important; }
+#qq { background: url("qq.png")/*tpa=http://www.fasene.com//css/images/about/qq.png*/ no-repeat; background-size: cover; }
+#tel { background: url("dh.png")/*tpa=http://www.fasene.com//css/images/about/dh.png*/ no-repeat; background-size: cover; }
+#weixin { background: url("wx.png")/*tpa=http://www.fasene.com//css/images/about/wx.png*/ no-repeat; background-size: cover; }
+#top { background: url("top.png")/*tpa=http://www.fasene.com//css/images/about/top.png*/ no-repeat; background-size: cover; }
+#top:hover { background: url("top_hover.png")/*tpa=http://www.fasene.com//css/images/about/top_hover.png*/ no-repeat; background-size: cover; }
+#qq:hover { background: url("qq_hover.png")/*tpa=http://www.fasene.com//css/images/about/qq_hover.png*/ no-repeat; background-size: cover; }
+#tel:hover { background: url("dh_hover.png")/*tpa=http://www.fasene.com//css/images/about/dh_hover.png*/ no-repeat; background-size: cover; }
+#weixin:hover { background: url("wx_hover.png")/*tpa=http://www.fasene.com//css/images/about/wx_hover.png*/ no-repeat; background-size: cover; }
+.s11 { width: 200px; height: 200px; overflow: hidden; }
+.tipCon img { display: inline-block; width: 124px; height: 124px; }
+.tipCon .h2 { margin: 0; padding-bottom: 5px; font-size: 12px; color: #acadb1; text-align: left; }
+.tipCon div { font-size: 18px; color: #5edae2; margin-bottom: 5px; }
+.tooltip { opacity: 1 !important; }
+ #fuwu .row p{color: #777;}
+ #jieju{background-color: #eeeeee7a}
+ /*展现形式*/
+#zhan{background:url("1-3.jpg")/*tpa=http://www.fasene.com//css/images/xiaochengxu/1-3.jpg*/ center center ;color: #ffffff;}
+#zhan .mp4img{position: absolute;}
+#zhan .omp4{position: relative;top:-7px;right:130px;}
+#zhan .mp4{width: 250px;height: 600px;}
+#zhan p{line-height: 27px;}
+#zhan .row .col-sm-12 .col-sm-6 .rui{border: 1px solid #ccc;;margin: auto;  position: absolute;  top: 20%; left: 0; bottom: 0; right: 0;box-shadow: 10px 10px 5px #888888;}
+ .iner{height: 25px;}
+  /*展现形式*/
+#zhan .row .col-sm-12 {cursor:pointer}
+#zhan .row .col-sm-12 .col-sm-6 .rui i {margin: auto; width: 0%; height: 4px; display: block; background-color: #e4007f; overflow: hidden; transition: all .25s ease-in-out; }
+#zhan .row .col-sm-12 .col-sm-6 .rui:hover > i { width: 50%; }
+.max{display: none;}
+/*公众号*/
+#cansa{background-color: #dddddd40;}
+.pf_liNum {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #3697dc;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.pf_liNum2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #3697dc;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+	background-color: #e46900;
+	
+}
+
+
+.pf{background-color: #e46900;}
+ .pf_plus {
+    font-size: 40px;
+    color: #00aef3;
+    margin: 0 5px;
+}
+.pf_serviceicon {
+    width: 108px;
+    height: 108px;
+    background: url("servicel.png")/*tpa=http://www.fasene.com//css/images/xiaochengxu/servicel.png*/ repeat;
+    margin: 30px auto 0;
+}
+#can .row .col-xs-12{cursor:pointer;}
+#can .row .col-xs-12 p{color: #707070e8;}
+#can .row .col-sm-2 p{color: #707070e8;line-height: 20px;}
+.wei{border: 1px solid #ccc;  box-shadow: 0 0 15px rgba(102, 102, 102, 0.5); border-radius: 5%;cursor:pointer;margin-bottom: 10px;}
+#cansa .row p{color: #707070e8;}
+.pf_one {
+    background-position: 0 0;
+}
+.pf_two {
+    background-position: 0 -243px;
+}
+.pf_three {
+    background-position: 0 -486px;
+}
+.pf_four {
+    background-position: 0 -729px;
+}
+.one:hover .pf_one{ background-position: 0 -122px;}
+.ones:hover{
+    background-color: #ff7852;
+    box-shadow: 0 0 15px rgba(102, 102, 102, 0.5);
+    color: #fff;
+}
+.two:hover .pf_two{ background-position: 0 -365px;}
+.twos:hover{
+    background-color: #54e4db;
+    box-shadow: 0 0 15px rgba(102, 102, 102, 0.5);
+    color: #fff;
+}
+.three:hover .pf_three{ background-position: 0 -608px;}
+.threes:hover{
+    background-color: #a3a8f0;
+    box-shadow: 0 0 15px rgba(102, 102, 102, 0.5);
+    color: #fff;
+}
+.four:hover .pf_four{ background-position: 0 -851px;}
+.fours:hover{
+    background-color: #79c0f2;
+    box-shadow: 0 0 15px rgba(102, 102, 102, 0.5);
+    color: #ffffff !important;
+}
+/*网站建设*/
+#jians .row p{font-size: 14px;color: #666666c9;line-height: 30px;}
+/*#liuch{background:url(../images/build/jzlc_bg.jpg) center center no-repeat;}*/
+#liuch{background-color: #eeeeee85;}
+.biasne{background-color: #dddddd54;}
+.price {
+    font-size: 16px;
+    color: #f00;
+    font-weight: bold;
+    font-family: Georgia,Tahoma;
+}
+ .price_d {
+    margin: 35px 0 20px 0;
+}
+ .buy_now {
+    height: 35px;
+    line-height: 35px;
+    width: 220px;
+    background: #00a1f1;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border: none !important;
+}
+#jiues{background-color: #F5F5F5;}
+#jiues .row .col-md-3 .yusk{background-color: #FFFFFF;padding: 22px 15px 24px 0px;border: 1px solid #ddd;cursor:pointer;margin-top: 10px;}
+#tubio .row .col-sm-2:hover{cursor:pointer }
+.weis{border: 1px solid rgba(204, 204, 204, 0.29);  box-shadow: 0 0 15px rgba(102, 102, 102, 0.5); border-radius: 2%;cursor:pointer;margin-top: 10px;} 
+.weis:hover{background-color:#dff0d87d;}
+#fuwulic{background-color: #3B9FF2;color: #ffffff !important;}
+.img-box img{  
+    width:100%;  
+    margin:auto;  
+}  
+/*联系*/
+.j-contact { float: left; display: inline-block; width: 44px; height: 103px; background: url("j1.jpg")/*tpa=http://www.fasene.com//css/images/build/j1.jpg*/ no-repeat; }
+.company-i{color: #999;margin-left: 70px;}
+.company{margin-top: 30px;color: #2c93e8;margin-left: 70px;}
+.j-p { font-size: 14px; color: #999; line-height: 34px; }
+.j-p b { width: 21px; height: 21px; display: inline-block; background: url("j2z.png")/*tpa=http://www.fasene.com//css/images/build/j2z.png*/ 0 0 no-repeat; vertical-align: middle; }
+ .j-p b.b3 { background-position: 0 -42px; } 
+.j-p b.b4 { background-position: 0 -63px; } 
+.j-p b.b5 { background-position: 0 -84px; } 
+.j-p b.b6 { background-position: 0 -105px; }
+.j-p span {
+    width: 100px;
+    padding-right: 2px;
+    display: inline-block;
+    margin-right: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background: url("j3.jpg")/*tpa=http://www.fasene.com//css/images/build/j3.jpg*/ right center no-repeat;
+}
+/*APP*/
+.app-p{display: inline-block; width:230px;
+        padding: 0 55px;
+        line-height: 24px;
+        font-size: 14px;}
+.fen{background-color: #f76e37;color: #ffffff;    margin-bottom: 20px;cursor:pointer;}
+.huis_{background-color: #d3d3d3;color: #f76e37;    margin-bottom: 20px;cursor:pointer;}
+.app-but{margin-bottom: 20px;}
+.app-h3{padding: 30px;}
+              .tb-img {
+                  display: block;
+                  width: 100%;
+                  height: 80px;
+                  margin-top: 20px;
+                  padding: 20px 0;
+                  background: no-repeat center;
+                  background-image: none;
+                  -webkit-transition: background-image .5s;
+                  transition: background-image .5s;
+              }
+        .app-but:hover{
+                            border: 1px solid #3bb6eb;
+                            background: #3bb6eb;
+                            box-shadow: 2px 2px 10px 0 rgba(59,182,235,.7);
+                            color: #fff;
+                        }
+          .wei:hover .tb-1 {
+                 background-image: url("D-pment-p20.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p20.png*/;
+            }
+          .tb-1{
+              background-image: url("D-pment-p4.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p4.png*/;
+          }
+            .wei:hover .tb-2 {
+                 background-image: url("D-pment-p21.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p21.png*/;
+            }
+        .tb-2{
+              background-image: url("D-pment-p5.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p5.png*/;
+          }
+             .wei:hover .tb-3 {
+                 background-image: url("D-pment-p22.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p22.png*/;
+            }
+         .tb-3{
+              background-image: url("D-pment-p6.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p6.png*/;
+          }
+          .wei:hover .tb-4 {
+                 background-image: url("D-pment-p23.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p23.png*/;
+            }
+       .tb-4{
+              background-image: url("D-pment-p7.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p7.png*/;
+          }
+        .wei:hover .tb-5 {
+                 background-image: url("D-pment-p24.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p24.png*/;
+            }
+         .tb-5{
+              background-image: url("D-pment-p8.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p8.png*/;
+          }
+         .wei:hover .tb-6 {
+                 background-image: url("D-pment-p25.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p25.png*/;
+            }
+     .tb-6{
+              background-image: url("D-pment-p9.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p9.png*/;
+          }
+        .wei:hover .tb-7 {
+                 background-image: url("D-pment-p26.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p26.png*/;
+            }
+         .tb-7{
+              background-image: url("D-pment-p10.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p10.png*/;
+          }
+        .wei:hover .tb-8 {
+                 background-image: url("D-pment-p27.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p27.png*/;
+            }
+         .tb-8{
+              background-image: url("D-pment-p11.png")/*tpa=http://www.fasene.com//css/images/app/D-pment-p11.png*/;
+          }
+#lan{background-image: url("D-pment-1.jpg")/*tpa=http://www.fasene.com//css/images/app/D-pment-1.jpg*/;}
+/*案例*/
+          .wrap{width: 1200px;margin:0 auto;}
+          .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;font-size:0;}
+.clearfix{*zoom:1;}
+ .Dp_3 ul {
+    width: 1216.5px;
+    margin-left: -16.5px;
+    padding: 36px 0;
+}
+ .Dp_3{width: 100%;box-sizing: border-box;}
+ .Dp_3 h3{ position: relative; height: 36px; padding: 16px 0;font-size: 36px;font-weight: bold; color: #fff; text-align: center; line-height: 36px;cursor: default;}
+ .Dp_3 h3:before{position: absolute;left: 50%; bottom: -2px;width: 30px;height: 2px;content: ' '; margin-left: -15px; background: #3bb6eb;}
+ .Dp_3 ul{width: 1216.5px; margin-left: -16.5px; padding: 36px 0;}
+ .Dp_3 ul li{ position: relative; float: left; width: 389px; height: 278px; overflow: hidden; margin-left: 16.5px; margin-bottom: 20px;cursor:pointer;}
+ .Dp_3 ul li h4{ position: absolute;top: 0; width: 389px; height: 278px;-webkit-transition: all 0.6s;transition: all 0.6s;}
+ .Dp_3 ul li a{position: absolute;bottom: 0px; z-index: 1; width: 100%; height: 68px; overflow: hidden; padding: 16px 26px; background: #fff; box-sizing: border-box;-webkit-transition: all .4s;transition: all .4s;}
+ .Dp_3 ul li a:before{background: #a0dcf6;content: '';position: absolute;height: 100%; width: 100%;bottom: 100%;left: 0;z-index: -1;-webkit-transition: -webkit-transform 0.6s;transition: transform 0.6s; -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+ .Dp_3 ul li a:after{ background: #3bb6eb; content: ''; position: absolute; height: 100%; width: 100%; bottom: 100%; left: 0; z-index: -1; -webkit-transition: -webkit-transform 0.6s; transition: transform 0.6s; -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+ .Dp_3 ul li a:hover:before,  .Dp_3 ul li a:hover:after{-webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0);}
+ .Dp_3 ul li a:hover:after{-webkit-transition-delay: 0.175s;transition-delay: 0.175s;}
+ .Dp_3 ul li a:hover span{ color: #fff;}
+ .Dp_3 ul li a span{ position: relative; z-index: 2;float: left; font-size: 14px; color: #60646a; line-height: 35px;}
+ .Dp_3 ul li a i{ float: right; width: 35px; height: 35px; background: url("icon_30.png")/*tpa=http://www.fasene.com//css/images/app/icon_30.png*/ no-repeat center;}
+ .Dp_3 ul li:hover a{ bottom: 0;}
+ .Dp_3 ul li:hover h4{ top: -20px;}
+#lic{ background-image: url("index_10.jpg")/*tpa=http://www.fasene.com//css/images/app/index_10.jpg*/;}
+.hez{margin-top: 40px;margin-bottom: 40px;}
+ /* 大屏幕（大桌面显示器，大于等于 1200px） */
+
+
+/*小程序应用场景*/
+#jin .row .col-xs-6 {cursor:pointer}
+#jin .row .col-xs-6 .lina{width: auto;border: 1px solid #ccc;height:auto;}
+#jin .row .col-xs-6 .lina i {margin: auto; width: 0%; height: 4px; display: block; background-color: #e4007f; overflow: hidden; transition: all .25s ease-in-out; }
+#jin .row .col-xs-6 .lina:hover > i { width: 50%; }
+#jin .row .col-xs-6 .lina:hover{ box-shadow:0px 0px 5px black;background-color: #ffffff;}
+@media (min-width:  1200px) {
+    #alogo{display: block; float: left; width: 190px; height: 40px; margin-top: 16px; background: url("headlogo.png")/*tpa=http://www.fasene.com//css/images/headlogo.png*/ no-repeat; background-size: auto 40px;}
+    .top_k{height: 70px;width: 100%;}
+    /*服务产品*/
+ #fuwu .row { width: 1200px; height: 265px; float: left; border-top:1px solid #fff;margin-top: 40px;}
+ #fuwu .row .col-sm-3 img { display: block; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+ #fuwu .row .col-sm-3 img:hover { margin-top: -20px;}
+ #fuwu .row .col-sm-3 h3 { width: 296px; height: 62px; display: block; text-align: center; font: bold 20px/62px "微软雅黑"; color: #5c5c5c;}
+ #fuwu .row .col-sm-3 p { width: 216px; height: 85px; display: block; margin:0 auto; font: 13px/20px "微软雅黑"; color: #aaa9a9; text-align: center; overflow: hidden;}
+/*解决方案*/
+#jieju .row { width:1220px;}
+#jieju .row .col-sm-3{float:left; width:284px; overflow:hidden; height:348px;position: relative; background-color:#fff;z-index:0; margin-right:20px;}
+#jieju .row .col-sm-3 .shade{width:284px;height:174px;background:url("solution_pic.png")/*tpa=http://www.fasene.com//css/images/solution_pic.png*/ center center no-repeat;position:absolute;top:-174px;left:0;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-ms-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear;}
+#jieju .row .col-sm-3 .bg{width:284px;height:174px;background:#5cc2d0;position:absolute;bottom:-210px;left:0;z-index:1;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-ms-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear;}
+#jieju .row .col-sm-3:hover .shade{top:0;}
+#jieju .row .col-sm-3:hover .bg{bottom:0;}
+#jieju .row .col-sm-3:hover h4 {color:#fff;}
+#jieju .row .col-sm-3:hover p {color:#fff;}
+#jieju .row .col-sm-3 img{width:284px;height:174px;-webkit-transition:all .4s linear;-moz-transition:all .4s linear;-ms-transition:all .4s linear;-o-transition:all .4s linear;transition:all .4s linear;}
+#jieju .row .col-sm-3 p,h4{
+    color:#aaa9a9;font-family:"微软雅黑";position:relative;z-index:2; 
+}
+#jieju .row .col-sm-3 h4{color:#191919;font-size:16px; line-height:32px; font-weight:normal;}
+/*成功案例*/
+#anli .row{ width:1220px;}
+/*我们的优势*/
+#youshi{background-color: #eeeeee7a;}
+#youshi .row .col-sm-3 {cursor:pointer}
+#youshi .row .col-sm-3  i {margin: auto; width: 0%; height: 4px; display: block; background-color: #e4007f; overflow: hidden; transition: all .25s ease-in-out; }
+#youshi .row .col-sm-3:hover > i { width: 100%; }
+/*客户*/
+#kehu .row .col-sm-3{border:1px solid #e6e6e6;background-color: rgb(255, 255, 255);}
+
+.cont1{
+     position:relative;
+    z-index:2;filter:alpha(opacity=60);
+    -moz-opacity:0.6;opacity:0.6;
+}  
+ .cont2{
+    filter:alpha(opacity=0);
+    -moz-opacity:0;opacity:0;position:absolute;
+    top:0px;left:70px;
+    z-index:1;transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);-moz-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);-o-transform:rotateY(180deg);
+}  
+#kehu .row .col-sm-3:hover .cont1{transform:rotateY(180deg);z-index:1;alpha(opacity=0);-moz-opacity:0;opacity:0;-ms-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-webkit-transform:rotateY(180deg);-o-transform:rotateY(180deg);}
+#kehu .row .col-sm-3:hover .cont2{transform:rotateY(360deg);z-index:2;filter:alpha(opacity=100);-moz-opacity:1;opacity:1;-ms-transform:rotateY(360deg);-moz-transform:rotateY(360deg);-webkit-transform:rotateY(360deg);-o-transform:rotateY(360deg);}  
+#kehu .row .col-sm-3:hover .cont2{z-index:2;}  
+#kehu .row .col-sm-3.cont1{transition:all .5s linear 10ms;} 
+#kehu .row .col-sm-3 .cont2{transition:all .5s linear 10ms;}
+.showtiem{display: none;}
+}
+
+  
+
+@media screen and (max-width: 1200px) {
+    #kehu .row .col-sm-3 .cont1{display: none;}
+    .header .con, .header1 .con { width: 90%; }
+    .find_nav_list > ul > li { margin: 0 0 0 15px; }
+    .breathing_lamp .lamp, .demand_content, .project, .home_dynamic, .home_choose, .footer_content, .choose_con { width: 100%; /*padding:0 3%;*/ }
+    .demand ul { width: 100%; }
+    .breathing_lamp { width: 100%; }
+    .choose_con .choose_box, .choose_con .choose_box .slide1 { width: 776px; }
+    .foot_top .foot_left { display: none; }
+    .foot_top .foot_right { width: 690px; margin: 0 auto; float: none; display: block; }
+    .foot_top .foot_right > ul > li { margin: 0 17px; }
+    .san_u_right .san_circle div, .san_u_right .san_circle span { width: 150px !important; height: 150px !important; line-height: 150px !important; }
+    .san_u_right .san_circle .in .circle2 { top: 90px; left: -60px; }
+    .san_u_right .san_circle .in .circle3 { top: 90px; right: -60px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li { margin-top: 40px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > div { margin-top: 5px; padding-right: 0; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a { width: 74%; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a .h3 { width: 240px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a span { float: left; padding-top: 5px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a p { padding-top: 10px; }
+}
+
+@media screen and (max-width: 1024px) {
+      #zhan .omp4{right: 83px;}
+    .home_choose .home_conli { margin: 15px 12px; }
+    .home_adv .adv_con p { width: 90%; }
+    /*.find_nav_list > ul.navbar > li { margin: 0 0 0 15px;}*/
+    .choose_con .choose_box, .choose_con .choose_box .slide1 { width: 582px; }
+    .ucr-banner .swiper-slide.slide3 img { width: 700px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a { width: 70%; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li { margin-top: 30px; }
+    .ser-drop { left: -302px;}
+    .showtiem{display: none;}
+}
+
+@media screen and (max-width: 768px) {
+    .header { position: fixed; height: 50px; }
+    .header1 { display: none; }
+    .sideline { display: none; }
+    .ucr-banner .swiper-slide.slide3 img { width: 600px; margin: 25px 0 0; }
+    .header.add .logo a { background: url("headlogo.png")/*tpa=http://www.fasene.com//css/images/headlogo.png*/ no-repeat; width: 200px; height: 30px; background-size: auto 30px; margin-top: 10px; margin-left: 0; }
+    .header .con .logo .hotline { margin-top: 4px; }
+    .menu_bt { display: block; margin: 17px 10px 0 0; }
+    .find_nav { opacity: 0 !important; position: fixed; top: 50px; right: 0; bottom: 0; left: 0; height: 0; z-index: 999; width: 100%; overflow: hidden; padding-top: 0px; background: #fff; transition: all .2s ease-in-out; color: #fff; }
+    .find_nav_left, .find_nav_list > ul { width: 100%; height: auto; padding-right: 0px;}    
+     .find_nav_list > ul.navbar{padding-left: 0px;
+    background-color: #fff;}
+    .find_nav_list > ul.navbar > li > i { display: none;}
+    .find_nav.black { opacity: 1 !important; height: 100%; padding-top: 40px; transition: all 0.5s ease-in; overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    z-index: 99;}
+    .find_nav .find_nav_list { width: 100%; margin: 0 auto; float: none; text-align: left; }
+    .find_nav .find_nav_list > ul.navbar > li { float: none; display: block; height: auto; padding: 0;/* margin: 0;*/ text-align: left; border-bottom: 1px solid #ddd}
+    .find_nav .find_nav_list > ul.navbar > li:nth-child(3) > a span.user-arrow { float: right; display: block; width: 20px; height: 20px; margin-top: 15px; cursor: pointer; background: url("drop.png")/*tpa=http://www.fasene.com//css/images/drop.png*/no-repeat center right; background-size: 20px 20px;}
+    .find_nav .find_nav_list > ul.navbar > li > a { height: 50px; line-height: 50px; font-size: 20px;}
+
+    .find_nav .find_nav_list > ul.navbar > li > ol{display: block}
+    .find_nav .find_nav_list > ul.navbar > li:nth-child(5) > a{display: none}
+    .find_nav .find_nav_list > ul.navbar > li > ol > li:nth-child(1){border-top: none;}
+    .find_nav .find_nav_list > ul.navbar > li > ol > li{margin: 0;padding-left: 10px;border-top: 1px solid #ddd;text-align: left;height: 50px; line-height: 50px;font-size: 16px;}
+    .find_nav .find_nav_list > ul.navbar > li > ol > li > a { display: block;}
+    .wechat{    margin-top: 50px;}
+    .distribution{margin-top: 50px;}
+    /*箭头旋转*/
+    .rotate{ 
+        transform-origin:center center; 
+        //旋转中心要是正中间 才行transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);-o-transform: rotate(180deg);transition: transform 0.2s; 
+        //过度时间 可调-moz-transition: -moz-transform 0.2s; -moz-transition: -moz-transform 0.2s; 
+        -o-transition: -o-transform 0.2s; -ms-transition: -ms-transform 0.2s; }
+    .rotate1{
+        transform-origin:center center;transform: rotate(0deg); 
+        //返回原点-webkit-transform: rotate(0deg);-moz-transform: rotate(deg);
+        -ms-transform: rotate(0deg);-o-transform: rotate(0deg);transition: transform 0.2s;
+         -moz-transition: -moz-transform 0.2s; -moz-transition: -moz-transform 0.2s;
+          -o-transition: -o-transform 0.2s; -ms-transition: -ms-transform 0.2s; }
+    /*箭头旋转 end*/   
+    .header.add .find_nav .find_nav_list ul.navbar > li > a,
+    .header1.add .find_nav .find_nav_list ul.navbar > li > a { font-size: 20px; color: #333; line-height: 50px;}
+    .header.add .find_nav .find_nav_list ul.navbar > li > a:hover, 
+    .header1.add .find_nav .find_nav_list ul.navbar > li > a:hover { color: #fff; border: 0; color: #e4007f; }
+    .header.add .find_nav .find_nav_list ul.navbar > li > a.on, 
+    .header1.add .find_nav .find_nav_list ul.navbar > li > a.on { color: #fff; border: 0; color: #25b728; }
+    .header_place { height: 50px; }
+    .find_nav .find_nav_list li.zi { display: block; }
+    .find_nav .find_nav_list li.zi em { display: block; width: 32px; height: 2px; background: #666; margin: 30px 0 10px 0; }
+    /**服务下拉导航**/
+    .find_nav_list > ul.navbar > li.serNav-drop:hover .ser-drop { display: none;}
+    .find_nav_list > ul.navbar > li.serNav-drop .ser-drop { display: none;}
+    .find_nav_list > ul.navbar > li.serNav-drop .ser-list > li > h3 > span { display: none;} 
+    .ser-drop {position: inherit; width: auto; left: 0; padding: 0; border: 0; background-color: #000;}
+    .ser-drop > ul { width: 100%; padding-bottom: 15px;}
+    .ser-drop > ul > li { float: none;  width: 100%; min-height: auto; padding: 5px 0 5px 20px; border-right: 0; }
+    .ser-drop > ul > li:last-child { border: 0;}
+    .ser-drop > ul > li .ser-list-img { display: none;} 
+    .ser-drop > ul > li > h3 > a { position: relative; display: inline-block; height: 20px; margin: 0; font-size: 14px; color: #b2b2b2;}
+    .ser-drop > ul > li > h3 > a span {display: none;}
+    .ser-drop > ul > li > ul { display: none; padding-top: 10px; overflow: hidden;}
+    .ser-drop > ul > li > ul li { display: block; padding-left: 20px;}
+    .ser-drop > ul > li > ul li a { display: block; color: #fff; font-size: 12px; line-height: 26px;}
+    .home_adv .adv_con { top: 40px; }
+    .home_adv .adv_con h3 { font-size: 24px; }
+    .demand .pos_sc ul { padding: 60px 25px 0; }
+    .demand .pos_sc > ul > li { float: none; width: 80%; margin: 0 auto 60px; }
+    .demand ul > li .bg_sho { position: relative; width: 100%; height: 124px; background-size: 100% 100%; margin: 0 auto; }
+    .demand ul > li div:hover img { bottom: 12px; }
+    .demand .pos_sc ul > li .bg_sho > div.business-layer { display: block; }
+    .demand ul > li .demand_center > h4 { font-size: 18px; }
+    .demand ul > li .demand_center p { font-size: 14px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > div { margin: 0; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a span { float: right; padding: 0; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a p { padding-top: 20px; }
+    .home_dynamic .home_dynamic_con > div { width: 94%; margin: 0 auto; float: none; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_left { float: none; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right { float: none; padding: 40px 0; }
+    .footer_content { margin: 15px auto 0; }
+    .footer, .foot_top { height: auto; border: 0; }
+    .foot_top .foot_right { width: 90%; margin: 0 auto; }
+    .foot_top .foot_right > ul > li { float: none; margin: 0; border-bottom: 1px solid #515765; cursor: pointer; }
+    .foot_top .foot_right > ul > li > ul { display: none; margin-top: 10px; }
+    .foot_top .foot_right > ul > li > ul li { margin-bottom: 15px; }
+    .foot_top .foot_right .down_drop { display: block; top: 15px; right: 1px; }
+    .foot_top .foot_right > ul > li > a { margin: 15px 0; font-size: 14px; }
+    .pos_abs, .foot_bottom > ul { display: none; }
+    .foot_bottom p { margin-top: 20px; }
+    .foot_bottom p span { display: inline-block; text-align: left; margin-top: 10px; 
+}
+@media screen and (max-width: 640px) {
+    .header.add .find_nav .find_nav_list ul.navbar > li > a, .header1.add .find_nav .find_nav_list ul.navbar > li > a { font-size: 16px;}
+    .find_nav_list > ul.navbar { height: auto;}
+    .find_nav_left, .find_nav_list > ul { padding-bottom: 30px;}
+    .header .con .logo a, .header1 .con .logo a { height: 30px; background-size: auto 30px; margin-top: 10px; } 
+    .project .project_con dt { font-size: 12px; padding: 5px 0 0; }
+    .project .project_con dt.h3 { margin: 10px 0 5px; }
+    .slide2 .title h1 { font-size: 30px; }
+    .swiper-slide .title img { width: 80%; }
+    .swiper-slide .title p { font-size: 30px; margin: 30px auto 0; }
+    .swiper-slide .title span { font-size: 14px; margin: 20px 25px; }
+    .breathing_lamp .lamp { display: none; }
+    .pagination { bottom: 30px; }
+    .ucr-banner, .ucr-banner .swiper-container { height: 500px; }
+    .swiper-pagination { bottom: 30px !important; }
+    .ucr-banner .swiper-slide.slide2 .title { margin-top: 100px; }
+    .ucr-banner .swiper-slide.slide1 > .title p, .ucr-banner .swiper-slide.slide2 .title h1 { font-size: 36px; }
+    .project .project_con .work-item-cover:before, .project .project_con .work-item-cover:after { position: absolute; top: 15px; right: 15px; bottom: 15px; left: 15px; content: ''; opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
+    .home_choose .choose_title { margin: 0 auto 30px; }
+    .demand { background-color: #fff;}
+    .demand ul > li .bg_sho { margin: 25px auto; }
+    .demand .pos_sc ul { padding: 40px 25px 0;}
+    .ser-drop > ul > li > h3 { height: auto; padding: 0; margin: 0;}
+    .pos_sc > ul > li { width: 100% !important; }
+    .button-next, .button-prev { display: none; }
+    .btn-more { display: block; }
+    .choose_con .choose_box .choose_list { display: none; }
+    .choose_con .choose_box .cooperative { display: block; width: 388px; overflow: hidden; }
+    .choose_con .choose_box .cooperative .slide { float: left; display: inline; width: 184px; height: 84px; margin: 0 17% 10px; overflow: hidden; border: 1px solid #e1e1e1; cursor: pointer; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
+    .choose_con .choose_box .cooperative .slide:hover { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); filter: grayscale(0%); filter: initia; }
+    .choose_con .choose_box .cooperative .slide img { width: 100%; height: 100%; }
+    .ucr-banner .swiper-slide.slide3 img { width: 500px; margin: 70px 0 0; }
+    .title-content .title-img { display: none; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_left .home_dynamic_text span { float: left; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li { margin-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > div { display: none; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a { width: 100%; padding-left: 0; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a .h3 { width: 100%; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a span { float: left; padding-top: 10px; font-size: 12px; }
+    .home_dynamic .home_dynamic_con div.home_dynamic_right li > a p { padding-top: 15px; }
+}
+
+@media screen and (max-width:480px) {
+    .find_nav.black { padding: 0;}
+    .pagination { bottom: 20px; }
+    .swiper-slide .title p, .slide2 .title h1 { font-size: 16px; }
+    .demand div.pos_sc > h3 { font-size: 24px; }
+    .demand ul > li .demand_center > h4 { font-size: 18px; }
+    .demand ul > li .demand_center > p { font-size: 14px; }
+    .ucr-banner, .ucr-banner .swiper-container { height: 340px; }
+    .swiper-pagination { bottom: 30px !important; }
+    .ucr-banner .swiper-slide.slide2 .title { margin-top: 50px; padding-top: 40px; }
+    .ucr-banner .swiper-slide.slide1 > .title p, .ucr-banner .swiper-slide.slide2 .title h1 { font-size: 14px; }
+    .ucr-banner .swiper-slide.slide2 .title span { margin: 10px 20px; font-size: 14px; }
+    .ucr-banner .swiper-slide.slide1 img { width: 300px; }
+    .choose_con .choose_box, .choose_con .choose_box .slide1 { width: 320px; }
+    .choose_con .slide1 .slide { width: 150px; height: auto; }
+    .button-next, .home_choose .button-prev { width: 28px; height: 28px; line-height: 28px; }
+    .choose_con .choose_box .cooperative .slide { width: 200px; height: auto; }
+    .ucr-banner .swiper-slide.slide3 img { width: 350px; margin: 40px 0 0; }
+    .demand .pos_sc ul > li .bg_sho > div.business-layer li a h3{ display: inline-block; padding-left: 15px; font-size: 14px; color: #fff; font-weight: 900 !important; transition: all .3s ease-in-out; }
+    .demand .pos_sc > ul > li { float: none; width: 100%; margin: 0 auto 0px; }
+    .project .project_title .h2{font-size: 22px;margin-top: 0px;}
+       .company-i{font-size: 16px;}
+       .company{font-size: 16px;}
+       .showtiem{display: block;}
+       .Dp_3{display: none;}
+ 
+}
+
+@media screen and (max-width:400px) {
+    .find_nav .find_nav_list { margin-top: 20px; }
+    /*.header.add .find_nav .find_nav_list li > a { font-size: 20px; padding: 8px; }*/
+    .find_nav .find_nav_list li.zi em { margin: 20px 0 10px 0; }
+    .home_adv .adv_con h3 { font-size: 22px; }
+    .home_adv .adv_con p { margin: 20px auto; }
+    .home_adv .btn_use a { width: 100px; }
+    .project .project_con dl { width: 90%; margin: 0 auto 30px; text-align: center; float: none; }
+    .home_adv .adv_con h3 { font-size: 20px; }
+    .home_adv .adv_con p { font-size: 12px; }
+    .swiper-slide .title span { margin: 20px 16px; }
+}
+
+@media screen and (max-width:768px) {
+    #zhan .omp4{right: 25px;}
+    #zhan .mp4img{margin-left: 2px;}
+}
+@media screen and (max-width:414px) {
+    .big{display: none;}
+    .max{display: block;}
+    #zhan .omp4{right: 2px;}
+    #zhan .mp4img{margin-left: 42px;}
+}
+@media screen and (max-width:375px) {
+    #zhan .omp4{right:0px;}
+    #zhan .mp4img{margin-left: 27px;}
+
+}
+@media screen and (max-width:360px) {
+    #zhan .omp4{right: 2px;}
+    #zhan .mp4img{margin-left: 16px;}
+
+}
+@media screen and (max-width:320px) {
+       #zhan .omp4{right: 0px;}
+    #zhan .mp4img{margin-left: 0px;}
+}
+
+
+
+
+
+

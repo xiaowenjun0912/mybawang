@@ -1,0 +1,220 @@
+body, h1, h2, h3, p, dl, dd, ol, ul, th, td, form, fieldset, input, button, textarea {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-size: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+fieldset, img {
+    border: 0;
+}
+cite, em, s, i, b {
+    font-style: normal;
+}
+input, button, textarea, select {
+    font-size: 100%;
+}
+body, input, button, textarea, select, option {
+    font-size: normal;
+}
+a, input, textarea {
+    text-decoration: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+li, img, label, input {
+    vertical-align: middle;
+}
+html, body {
+    list-style-type: none;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+    color: #888;
+    font-size: 12px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.footer{
+	background: #3F3F3F;
+	width: 100%;
+	height: auto;
+	padding: 1em 0;
+	margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
+}
+
+.main-content{
+    max-width: 1180px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.sec0 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #3f3f3f;
+    padding: 20px 0 0;
+}
+.gray-bg {
+    background: #f9f9f9;
+}
+.distribution>.p1{font-size: 28px; text-align: center; padding: 15px 0; background: #041e3f; color: #fff;}
+.distribution .sec0 .tit-1 {
+    font-size: 26px;
+    margin: 15px auto;
+    color: #2ba4ff;
+}
+.distribution .sec0 .sec-img {
+    width: 100%;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+.distribution .sec0 .tit-2{
+	font-size: 16px;
+	line-height: 30px;
+}
+.show_mobile_img{
+	width: 50%;
+	margin-top: 30px;
+}
+.select_type {
+    width: 50%;
+    padding-top: 70px;
+}
+.show_mobile_img1{
+	width: 43%;
+	margin-top: 30px;
+}
+.wechat_jjfncon {
+    width: 57%;
+    padding-top: 0px;
+}
+
+.select_type dl.type01 {
+    margin-bottom: 20px;
+}
+.select_type dt {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.select_type dd {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: #646464;
+    line-height: 40px;
+    margin: 0 6%;
+}
+.type_ico01{
+	display: block;
+    width: 70px;
+    height: 70px;
+}
+.wechat_jjfncon{
+	
+    
+}
+.wechat_jjfncon dl {
+    display: block;
+    float: right;
+    margin-top: 17px;
+    text-align: left;
+}
+.wechat_jjfncon dl dd em{
+	text-align: left;
+	display: block;
+}
+.wechat_jjfncon dl dd em.em1 {
+    color: #00a8ee;
+    font-size: 18px;
+}
+.wechat_jjfncon dl dd em.em1 {
+    color: #00a8ee;
+    font-size: 18px;
+}
+.wechat_jjfncon dl dd em.em2 {
+    color: #444;
+    font-size: 14px;
+}
+
+.banner{ background: url("fenxbanner.jpg")/*tpa=http://www.fasene.com//distribution_mall/images/fenxbanner.jpg*/ no-repeat center; width: 100%; height: 690px;}
+
+
+/*.tit-1 span{color: #01aeff;}*/
+.lynn-admin-top{height:760px; background: url("admin_bg.png")/*tpa=http://www.fasene.com//distribution_mall/images/admin_bg.png*/ no-repeat center top; background-size: 100% 100%;}
+
+.lynn-admin-header{width:1200px;height:213px;position: relative;text-align: center;padding-top:56px;margin:0 auto;overflow: hidden;}
+
+.lynn-admin-header i{height:14px;width:100%;position:absolute;border-bottom:1px dashed #fff;border-top:1px dashed #fff;left:0;top:96px;}
+
+.lynn-admin-header span{height:90px;line-height: 90px;padding:0 15px;background: #00aeff;color:#fff;position: relative;z-index: 1;font-size:40px;display: inline-block;margin:0 auto;}
+.lynn-admin-header span.admin-top-bg{background: url("admin-top-bg.png")/*tpa=http://www.fasene.com//distribution_mall/images/admin-top-bg.png*/ no-repeat center top;}
+
+.lynn-admin-header p{padding:5px 0 0 0;margin:0;line-height: 30px;font-size:18px;text-align: center;}
+
+.lynn-admin-header p strong{color:#fff;font-weight: normal;width:520px;display: block;margin:0 auto;}
+
+.lynn-admin-bot{height:566px;width:1200px;margin:0 auto;position: relative;text-align: center;z-index: 1;overflow:visible;}
+.lynn-admin-bot img{position: absolute;top:-405px;left:58px;z-index: 1;}
+
+.p1_bj1{ background: #fff7ef url("pic-05-1.png")/*tpa=http://www.fasene.com//distribution_mall/images/pic-05.png*/ no-repeat center center; }
+.p1_bj2{ background: #f6fbf3 url("new-pic.png")/*tpa=http://www.fasene.com//distribution_mall/images/new-pic.png*/ no-repeat center center; }
+.page{width: 100%; height: 700px; padding: 0; margin: 0 auto;}
+.page .div_mg{ margin: 70px auto;}
+.page .mt3{color: #2d2d2d; font-size: 30px; font-weight: normal; text-align: center; padding-top: 8px;}
+.page .p_kl{font-size: 20px; margin: 0 auto; width:400px; color: #979797; font-weight: normal; text-align: center; padding-top: 20px; line-height: 34px;}
+
+@media only screen and (min-width: 290px) and (max-width: 720px) {
+	.banner{height: 140px; background-size: 100% 100%; }
+	.distribution img{ width: 90%;}
+	.distribution>.p1{font-size: 1.6em; padding: 0.5em 0;}
+	.show_mobile_img{ width: 100%;}
+	.show_mobile_img1{ width: 90%;}
+	.select_type{ width: 100%; padding-top: 30px;}
+	.select_type dd img{ width: 100%;}
+	.sec0{ padding: 5px 0;}
+	.distribution .sec0 .tit-1{ font-size: 1.5em; margin: 10px 8%;}
+	.distribution .sec0 .sec-img{padding-bottom: 0px;}
+	.select_type dd { font-size: 1.2em; margin: 15px 8%; line-height: 22px;}
+	.distribution .sec0 .tit-2{font-size: 0.8em;line-height: 1.5em;}
+	.select_type dt{font-size: 1.3em;  margin-bottom: 10px; text-align: center;}
+	.lynn-admin-header span{ font-size: 1.5em; padding: 0 8px; height: 50px; line-height: 50px;}
+	.lynn-admin-top{height:266px;}
+	.lynn-admin-header{width:100%;height:100px;}
+	.lynn-admin-bot{height:200px;width:100%;}
+	.lynn-admin-bot img{ top: -80px; left: 19px;}
+	.lynn-admin-header{ padding-top: 30px;}
+	.lynn-admin-header p{font-size: 1em;line-height: 1.5em;}
+	.lynn-admin-header p strong{ width: 90%;}
+	.lynn-admin-header i{ top: 45px;}
+	.page{height: 310px;}
+	.page .div_mg{ margin: 1.5em auto;}
+	.page .p_kl{width:100%; padding-top: 1em; line-height: 1.5em; font-size: 1.2em;}
+	.page .mt3{ font-size: 1.6em;padding-top: 3px;}
+}
